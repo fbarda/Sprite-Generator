@@ -1,3 +1,6 @@
-.vscode/ #vscode settings for the project
-.DOCS/ #jsdocs just in case if I give it a long break/someone wants to contribute
-.templates/ #Paint.NET templates
+.vscode/ 
+#vscode settings for the project
+.DOCS/ 
+#jsdocs just in case if I give it a long break/someone wants to contribute
+.templates/ 
+#Paint.NET templates
