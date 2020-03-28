@@ -1,0 +1,21 @@
+{
+  "name": "sprite-generator",
+  "version": "0.0.1",
+  "description": "A bulk sprite generator made for a friend",
+  "main": "serve.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Not Implemented\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbarda/sprite-gen.git"
+  },
+  "author": "fbarda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fbarda/sprite-gen/issues"
+  },
+  "homepage": "https://github.com/fbarda/sprite-gen#readme"
+}
