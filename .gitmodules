@@ -1,0 +1,6 @@
+[submodule "servedFiles/scripts/forkedOutPromise"]
+	path = servedFiles/scripts/forkedOutPromise
+	url = https://github.com/fbarda/ForkedOutPromiseJS.git
+[submodule "servedFiles/scripts/asyncArrayUtils"]
+	path = servedFiles/scripts/asyncArrayUtils
+	url = https://github.com/fbarda/asyncArrayUtils
