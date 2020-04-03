@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "A bulk sprite generator made for a friend",
   "main": "serve.js",
-  "dependencies": {},
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Not Implemented\""
+    "start": "npx http-server ./servedFiles --port ${PORT:-8080} -o ./ -c 86400"
   },
   "repository": {
     "type": "git",
