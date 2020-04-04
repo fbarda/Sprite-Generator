@@ -32,8 +32,6 @@ async function getImageSizes(dataURL) {
         }
     );
 }
-async function saveImageToCache(key, dataURL) { }
-async function getImageFromCache(key) { }
 async function validateFileList(fileList){
     if(fileList instanceof FileList){
         return;
