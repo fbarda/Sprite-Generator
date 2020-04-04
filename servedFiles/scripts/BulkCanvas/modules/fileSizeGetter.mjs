@@ -4,7 +4,7 @@ import {default as FOPConstructor} from "./../../forkedOutPromise/module.mjs";
  * @returns {Promise<string>}
  * @param {File}file 
  */
-async function fileToDataURL(file) {
+export async function fileToDataURL(file) {
     if (!(file instanceof File)) {
         throw "Not a file.";
     }
@@ -44,7 +44,7 @@ async function getImageSizes(dataURL) {
  * @param {string|File} file 
  */
 
-export async function getImageSize(file){
+export async function getImageFileSize(file){
     if(file instanceof File){
         file =await fileToDataURL(file);
     }
