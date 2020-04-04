@@ -1,0 +1,36 @@
+body{width:99%;height:100%}
+.flexWrapper {
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+    height: 90%;
+}
+
+.innerFlex {
+    flex-direction: column;
+    background: #012345AA;
+    flex-grow: 1;
+}
+
+.outerFlex {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#overviewPanel {
+    min-width: 50%;
+    max-width: 75%;
+    margin: 0 5%;
+    height: 500px;
+}
+
+#panelOfOthers {
+    width: 20%;
+}
+
+#panelOfOthers>div {
+    width: 100%;
+    border-radius: 7px;
+    margin: 5% 0;
+    min-height:50px;
+}

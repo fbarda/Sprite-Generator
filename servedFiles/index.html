@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <title>
+            Sprite Generator - Development Phase
+        </title>
+        <link href="styling.css" rel="stylesheet" />
+        <script src="./scripts/libraries/jszip/jszip.js"></script>
+        <meta charset="UTF-8">
+        <meta name="author" content="fbarda">
+    </head>
+
+    <body>
+        <h1>May break. Report issues on <a href="https://github.com/fbarda/Sprite-Generator/issues">this github
+                link.</a></h1>
+        <div class="outerFlex flexWrapper">
+            <div class="innerFlex flexWrapper padded" id="overviewPanel">
+                <span id="settings">
+                    Settings:
+                    <span id="globalSettings">
+                        <label><input type="checkbox" id="allowNoOverlayLayers">Allow a layer to not apply a
+                            overlay.</label>
+                        <label><input type="checkbox" id="AllowBaseExport">Allow all overlays not putting an overlay,
+                            exporting only the base image.</label>
+                        <label><input type="checkbox" id="allowSizeChanges"> Allow editing an overlay if it's size is
+                            not the same with base's size.</label>
+                        <label><select id="editTool">
+                                <option value="changeSize">
+                                    Stretch/Shrink
+                                </option>
+                                <option value="cropFromMid">
+                                    Crop from middle if the overlay is too big, Use as is otherwise
+                                </option>
+                                <option value="cropFromStart">
+                                    Crop from most top left if the overlay is too big, Use as is otherwise
+                                </option>
+                            </select>
+                        </label>
+                    </span>
+                    <span id="OutputFormatControls">
+                        <label>The images will exported as
+                            <select id="outputFormat" disabled>
+                                <option value="image/png" selected>PNG</option>
+                                <option value="image/gif">Non-Animated GIF</option>
+                                <option value="image/webp">WEBP</option>
+                                <option value="image/jpeg">JPG</option>
+                                <option value="image/bmp">Bitmap</option>
+                            </select>.
+                        </label>
+                    </span>
+                    <span id="QualityControls">
+                        <label>Image Compression Quality
+                            <input type="number" min="1" max="100" step="1" id="ImageQualityInput">%</label>
+                        <input type="range" id="ImageQualitySlider">
+                    </span>
+                </span>
+                <hr>
+            </div>
+            <div class="innerFlex flexWrapper" id="panelOfOthers">
+                <div id="getResults" class="innerFlex flexWrapper">
+                    <hr>
+                </div>
+                <div class="innerFlex flexWrapper" id="addFiles">
+                    <label><input type="file" id="importer" multiple></label>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
