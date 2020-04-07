@@ -1,14 +1,17 @@
-.vscode/ 
+.vscode
 #vscode settings for the project
 
-.DOCS/ 
+.DOCS
 #jsdocs just in case if I give it a long break/someone wants to contribute
 
-.templates/ 
+.templates
 #Paint.NET templates
 
-servedFiles/resources/test/
+servedFiles/resources/test
 #test Materials
 
 node_modules
 #npm modules
+
+.notes
+#notes to self
